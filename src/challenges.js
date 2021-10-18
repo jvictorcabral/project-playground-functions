@@ -17,8 +17,7 @@ function splitSentence(sentence) {
 }
 
 // Desafio 4
-function concatName(arr) {
-  //return arr[arr.lenght = -1, arr.lenght = 0];
+function concatName() {
 }
 
 // Desafio 5
