@@ -18,12 +18,12 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(arr) {
-  return arr[arr.length -1] + ', ' + arr[0];
+  return arr[arr.length - 1] + ', ' + arr[0];
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, tied) {
+  return wins * 3 + tied;
 }
 
 // Desafio 6
