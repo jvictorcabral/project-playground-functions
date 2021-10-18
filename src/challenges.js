@@ -2,9 +2,8 @@
 function compareTrue(boolean1, boolean2) {
   if (boolean1 && boolean2 === true) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 // Desafio 2
@@ -19,7 +18,7 @@ function splitSentence(sentence) {
 
 // Desafio 4
 function concatName(arr) {
-return arr[arr.lenght = -1, arr.lenght = 0];
+  //return arr[arr.lenght = -1, arr.lenght = 0];
 }
 
 // Desafio 5
