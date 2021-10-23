@@ -32,7 +32,7 @@ function highestCount(arr1) {
   let count = 0;
   for (let i = 0; i < arr1.length; i += 1) {
     if (arr1[i] > maior) {
-      maior = arr1[i]
+      maior = arr1[i];
     }
   }
   for (let i = 0; i < arr1.length; i += 1) {
@@ -44,14 +44,48 @@ function highestCount(arr1) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let cat1Distance = mouse - cat1;
+  let cat2Distance = mouse - cat2;
+  let ratoFoge = 'os gatos trombam e o rato foge'
+  if (cat1Distance === cat2Distance) {
+    return ratoFoge;
+  } else if (cat1Distance > cat2Distance) {
+    return 'cat1'
+  } else {
+    return 'cat2'
+  }
+
 }
 
+
+
+
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(number) { 
+    let result = [];
+  for (let index = 0; index < number.length; index++) {
+    let number3 = number[index] % 3 === 0;
+    let number5 = number[index] % 5 === 0;
+    let numberBoth = number3 && number5;
+    switch (true) {
+      case number3:
+        result.push('fizz');
+        break;
+      case number5:
+        result.push('buzz');
+        break;
+      case numberBoth:
+        result.push('fizzBuzz');
+        break;
+      default:
+        result.push('bug!');
+    }
+    return result
+  }
 }
+
+
 
 // Desafio 9
 function encode() {
