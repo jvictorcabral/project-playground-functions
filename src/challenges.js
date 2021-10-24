@@ -68,14 +68,14 @@ function fizzBuzz(number) {
     let number5 = number[index] % 5 === 0;
     let numberBoth = number3 && number5;
     switch (true) {
+      case numberBoth:
+        result.push('fizzBuzz');
+        break;      
       case number3:
         result.push('fizz');
         break;
       case number5:
         result.push('buzz');
-        break;
-      case numberBoth:
-        result.push('fizzBuzz');
         break;
       default:
         result.push('bug!');
